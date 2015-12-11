@@ -1,39 +1,32 @@
 package chrome.google;
 
 import base.WebDriverFactory;
-import br.eti.kinoshita.testlinkjavaapi.constants.ExecutionStatus;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.model.SeverityLevel;
-import steps.googlesteps.CheckGoogle;
-
-
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
+import steps.borloginsteps.CheckLogin;
 
 /**
- * Created by matcievskiy on 10.11.2015.
+ * Created by martynov on 11.12.2015.
  */
-public class GoogleIconTest {
-
+public class BorElementsTest_spaceEm {
     WebDriver driver = null;
-    CheckGoogle steps = null;
+    CheckLogin steps = null;
 
-    @Test(testName = "1190")
+    @Test(testName = "5")
     @Severity(value = SeverityLevel.CRITICAL)
-    @Features("Google icon ")
-    public void googleIconTest() throws InterruptedException {
-
-        steps.goToGoogle().
-                checkGoogleElements();
-
-
+    @Features("BOR elements space Email")
+    public void borElementsTestEmpty() throws InterruptedException {
+        steps.goToBor().
+                clearemail().
+                clearepass().
+                clickemailb("    ").
+                clickpassb("123456").
+                clicklogbut();
     }
 
 
@@ -41,9 +34,7 @@ public class GoogleIconTest {
 
     @BeforeTest
     public void setUp() throws InterruptedException {
-
         System.setProperty("webdriver.chrome.driver", "src/main/resources/selenium/chromedriver.exe");
-        steps = new CheckGoogle(driver = WebDriverFactory.getDriver(DesiredCapabilities.chrome()));
+        steps = new CheckLogin(driver = WebDriverFactory.getDriver(DesiredCapabilities.chrome()));
     }
-
 }

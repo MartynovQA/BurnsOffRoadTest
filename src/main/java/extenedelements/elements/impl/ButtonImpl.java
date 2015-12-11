@@ -1,6 +1,7 @@
 package extenedelements.elements.impl;
 
 import extenedelements.elements.Button;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -20,5 +21,9 @@ class ButtonImpl extends AbstractElement implements Button {
 
       return wrappedElement.isDisplayed();
 
+    }
+
+    public void clickEnter() {
+        wrappedElement.sendKeys(Keys.ENTER);
     }
 }

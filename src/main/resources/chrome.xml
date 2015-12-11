@@ -3,10 +3,16 @@
 <suite  name="Chrome Suite" parallel="false">
     <test name="Start Page Test" verbose="1">
         <classes>
-            <class name="chrome.google.GoogleIconTest"/>
-            <class name="chrome.google.GoogleElemetnsTest"/>
-            <class name="chrome.google.GoogleSearchTest"/>
-            <class name="chrome.google.NegativeTest"/>
+            <class name="chrome.google.BorElementsTest_Valid"/>
+            <class name="chrome.google.BorElementsTest_empty"/>
+            <class name="chrome.google.BorElementsTest_spaceALL"/>
+            <class name="chrome.google.BorElementsTest_spaceEm"/>
+            <class name="chrome.google.BorElementsTest_spacePs"/>
+            <class name="chrome.google.BorElementsTest_InvE"/>
+            <class name="chrome.google.BorElementsTest_SSymb"/>
+            <class name="chrome.google.BorElementsTest_InvP"/>
+            <class name="chrome.google.BorElementsTest_DifLog"/>
+            <class name="chrome.google.BorElementsTest_Enter"/>
         </classes>
     </test>
 

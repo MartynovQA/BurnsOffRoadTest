@@ -14,7 +14,7 @@ public class BaseTest {
 
    
     WebDriver driver = null;
-    String base_url = "https://google.ru";
+    String base_url = "http://burnsoffroad.frontend.mgrnix.com:23080/start/sign-in";
 
     public BaseTest(WebDriver driver) throws InterruptedException{
         this.driver = driver;
@@ -24,7 +24,7 @@ public class BaseTest {
 
 
   
-    public void openGoogle(){
+    public void openBOR(){
 
         driver.get(base_url);
     }
