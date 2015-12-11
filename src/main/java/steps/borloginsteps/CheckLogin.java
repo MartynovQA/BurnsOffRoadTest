@@ -2,7 +2,7 @@ package steps.borloginsteps;
 
 import base.BaseTest;
 import org.openqa.selenium.WebDriver;
-import pageobjects.BurnsOfRoadAva;
+import pageobjects.BurnsOfRoadDashBoard;
 import pageobjects.BurnsOfRoadLogin;
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -12,14 +12,14 @@ import ru.yandex.qatools.allure.annotations.Step;
 public class CheckLogin extends BaseTest {
     WebDriver driver = null;
     BurnsOfRoadLogin burnsOfRoadLogin = null;
-    BurnsOfRoadAva burnsOfRoadAva = null;
+    BurnsOfRoadDashBoard burnsOfRoadAva = null;
 
     public CheckLogin(WebDriver driver) throws InterruptedException {
         super(driver);
         this.driver = driver;
 
         burnsOfRoadLogin = new BurnsOfRoadLogin(driver);
-        burnsOfRoadAva = new BurnsOfRoadAva(driver);
+        burnsOfRoadAva = new BurnsOfRoadDashBoard(driver);
     }
 
     @Step("Go to Burns Of Road")
@@ -69,9 +69,16 @@ public class CheckLogin extends BaseTest {
         burnsOfRoadLogin.textFieldEmptyE();
         return this;
     }
+
     @Step("Clear Pass")
     public CheckLogin clearepass(){
         burnsOfRoadLogin.textFieldEmptyP();
+        return this;
+    }
+
+    @Step("Error Invalid Date")
+    public CheckLogin checkvalidator(){
+        burnsOfRoadLogin.validatorCheck();
         return this;
     }
 }

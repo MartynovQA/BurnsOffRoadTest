@@ -1,4 +1,4 @@
-package chrome.google;
+package chrome.Login;
 
 import base.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -13,20 +13,20 @@ import steps.borloginsteps.CheckLogin;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BorElementsTest_spaceEm {
+public class BorSpecSymbolLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
-    @Test(testName = "5")
     @Severity(value = SeverityLevel.CRITICAL)
-    @Features("BOR elements space Email")
+    @Features("BOR elements spec symbols")
     public void borElementsTestEmpty() throws InterruptedException {
         steps.goToBor().
                 clearemail().
                 clearepass().
-                clickemailb("    ").
-                clickpassb("123456").
-                clicklogbut();
+                clickemailb("@#$%%^*)(&*(&").
+                clickpassb("!#%^#*!*&$^").
+                clicklogbut().
+                checkvalidator();
     }
 
 

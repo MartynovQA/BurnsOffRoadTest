@@ -12,8 +12,8 @@ import org.testng.Assert;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BurnsOfRoadAva extends AbstractContainer {
-    public BurnsOfRoadAva(WebDriver driver){
+public class BurnsOfRoadDashBoard extends AbstractContainer {
+    public BurnsOfRoadDashBoard(WebDriver driver){
         PageFactory.initElements(new ExtendedFieldDecorator(driver), this);
     }
 

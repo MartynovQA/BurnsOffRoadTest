@@ -27,22 +27,29 @@ public class BurnsOfRoadLogin extends AbstractContainer {
     @FindBy(xpath = "//div/div/form/button")
     private Button logButton;
 
+    @FindBy(xpath = "//div/form/div/div/ul/li/p")
+    private Link validator;
+
     public void checkBorElements(){
         Assert.assertTrue(borEmail.isDisplayed());
         Assert.assertTrue(borPass.isDisplayed());
         Assert.assertTrue(logButton.isDisplayed());
     }
 
-    public void fillEmail(String searchText){
-        borEmail.clearAndType(searchText);
+    public void fillEmail(String email){
+        borEmail.clearAndType(email);
     }
 
-    public void fillPass(String searchText){
-        borPass.clearAndType(searchText);
+    public void fillPass(String pass){
+        borPass.clearAndType(pass);
     }
 
     public void clickIn(){
         logButton.click();
+    }
+
+    public void validatorCheck(){
+        Assert.assertTrue(validator.isDisplayed());
     }
 
     public void logEnter() {

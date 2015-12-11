@@ -1,4 +1,4 @@
-package chrome.google;
+package chrome.Login;
 
 import base.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -13,14 +13,13 @@ import steps.borloginsteps.CheckLogin;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BorElementsTest_Enter {
+public class BorEnterKeyLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
-    @Test(testName = "10")
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements Enter")
-    public void borElementsTestEmpty() throws InterruptedException {
+    public void borEnterKeyLoginTest() throws InterruptedException {
         steps.goToBor().
                 clearemail().
                 clearepass().

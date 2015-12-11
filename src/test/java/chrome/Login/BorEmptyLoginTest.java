@@ -1,4 +1,4 @@
-package chrome.google;
+package chrome.Login;
 
 import base.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -13,20 +13,20 @@ import steps.borloginsteps.CheckLogin;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BorElementsTest_spaceALL {
+public class BorEmptyLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
-    @Test(testName = "4")
     @Severity(value = SeverityLevel.CRITICAL)
-    @Features("BOR elements space ALL")
-    public void borElementsTestEmpty() throws InterruptedException {
+    @Features("BOR elements empty")
+    public void borEmptyLoginTest() throws InterruptedException {
         steps.goToBor().
                 clearemail().
                 clearepass().
-                clickemailb("   ").
-                clickpassb("         ").
-                clicklogbut();
+                clickemailb("").
+                clickpassb("").
+                clicklogbut().
+                checkvalidator();
     }
 
 

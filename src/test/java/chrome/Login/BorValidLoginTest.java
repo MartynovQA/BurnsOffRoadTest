@@ -1,4 +1,4 @@
-package chrome.google;
+package chrome.Login;
 
 import base.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -13,20 +13,21 @@ import steps.borloginsteps.CheckLogin;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BorElementsTest_DifLog {
+public class BorValidLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
-    @Test(testName = "9")
     @Severity(value = SeverityLevel.CRITICAL)
-    @Features("BOR elements valid email and valid password related with other email")
-    public void borElementsTestEmpty() throws InterruptedException {
+    @Features("BOR elements Valid")
+    public void borValidLoginTest() throws InterruptedException {
         steps.goToBor().
                 clearemail().
                 clearepass().
+                checkBorElements().
                 clickemailb("admin@a.com").
-                clickpassb("qwerty").
-                clicklogbut();
+                clickpassb("123456").
+                clicklogbut().
+                checkBorAva();
     }
 
 

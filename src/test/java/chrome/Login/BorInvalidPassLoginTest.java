@@ -1,4 +1,4 @@
-package chrome.google;
+package chrome.Login;
 
 import base.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -13,11 +13,10 @@ import steps.borloginsteps.CheckLogin;
 /**
  * Created by martynov on 11.12.2015.
  */
-public class BorElementsTest_InvP {
+public class BorInvalidPassLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
-    @Test(testName = "8")
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements invalid pass")
     public void borElementsTestEmpty() throws InterruptedException {
@@ -26,7 +25,8 @@ public class BorElementsTest_InvP {
                 clearepass().
                 clickemailb("admin@a.com").
                 clickpassb("124dfgg").
-                clicklogbut();
+                clicklogbut().
+                checkvalidator();
     }
 
 
