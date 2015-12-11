@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Chrome Suite" parallel="false">
+    <test name="Start Page Test" verbose="1">
+        <classes>
+            <class name="chrome.google.GoogleIconTest"/>
+            <class name="chrome.google.GoogleElemetnsTest"/>
+            <class name="chrome.google.GoogleSearchTest"/>
+            <class name="chrome.google.NegativeTest"/>
+        </classes>
+    </test>
+
+
+    </suite>

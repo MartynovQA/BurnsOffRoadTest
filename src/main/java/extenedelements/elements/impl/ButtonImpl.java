@@ -1,0 +1,24 @@
+package extenedelements.elements.impl;
+
+import extenedelements.elements.Button;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+
+class ButtonImpl extends AbstractElement implements Button {
+    protected ButtonImpl(final WebElement wrappedElement) {
+        super(wrappedElement);
+    }
+
+
+    public void click() {
+        wrappedElement.click();
+    }
+
+
+    public boolean isDisplays(){
+
+      return wrappedElement.isDisplayed();
+
+    }
+}

@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Class-Path: webbit-0.4.14.jar platform-3.4.0.jar httpclient-4.3.6.jar 
+ jetty-websocket-8.1.15.v20140411.jar allure-model-1.4.11.jar htmlunit
+ -2.15.jar aopalliance-1.0.jar commons-io-2.4.jar phantomjsdriver-1.0.
+ 4.jar tika-core-1.7.jar bcprov-jdk15on-1.48.jar jaxb2-basics-runtime-
+ 0.9.3.jar jcommander-1.27.jar log4j-1.2.17.jar hamcrest-all-1.3.jar s
+ elenium-htmlunit-driver-2.45.0.jar testng-6.8.jar allure-testng-adapt
+ or-1.4.11.jar cssparser-0.9.14.jar jcip-annotations-1.0.jar mx4j-tool
+ s-3.0.1.jar javax.inject-1.jar cglib-nodep-2.1_3.jar selenium-safari-
+ driver-2.45.0.jar serializer-2.7.1.jar allure-java-aspects-1.4.11.jar
+  jna-3.4.0.jar ashot-1.1.jar slf4j-api-1.7.10.jar guice-3.0.jar servl
+ et-api-2.5-6.1.9.jar bcpkix-jdk15on-1.48.jar selenium-java-2.45.0.jar
+  selenium-remote-driver-2.45.0.jar xalan-2.7.1.jar charts4j-1.3.jar c
+ ommons-logging-1.1.3.jar xercesImpl-2.11.0.jar selenium-api-2.45.0.ja
+ r commons-lang3-3.3.2.jar selenium-server-2.33.0.jar commons-exec-1.1
+ .jar htmlunit-core-js-2.15.jar xml-apis-1.4.01.jar aspectjrt-1.8.3.ja
+ r guava-18.0.jar selenium-support-2.45.0.jar jetty-io-8.1.15.v2014041
+ 1.jar properties-loader-1.5.jar selenium-leg-rc-2.45.0.jar httpcore-4
+ .3.3.jar nekohtml-1.9.21.jar slf4j-log4j12-1.7.10.jar gson-2.3.1.jar 
+ jetty-util-8.1.15.v20140411.jar sac-1.3.jar selenium-chrome-driver-2.
+ 45.0.jar selenium-firefox-driver-2.45.0.jar commons-collections-3.2.1
+ .jar commons-codec-1.6.jar allure-java-adaptor-api-1.4.11.jar snakeya
+ ml-1.6.jar httpmime-4.3.3.jar selenium-ie-driver-2.45.0.jar bsh-2.0b4
+ .jar allure-java-annotations-1.4.11.jar netty-3.5.2.Final.jar jetty-r
+ epacked-7.6.1.jar commons-beanutils-core-1.8.3.jar jetty-http-8.1.15.
+ v20140411.jar
+Main-Class: 
+
