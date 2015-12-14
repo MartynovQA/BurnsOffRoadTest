@@ -17,6 +17,7 @@ public class BorSpecSymbolLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements spec symbols")
     public void borElementsTestEmpty() throws InterruptedException {

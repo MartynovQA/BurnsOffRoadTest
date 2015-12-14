@@ -17,6 +17,7 @@ public class BorSpacePsLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements space Pass")
     public void borElementsTestEmpty() throws InterruptedException {

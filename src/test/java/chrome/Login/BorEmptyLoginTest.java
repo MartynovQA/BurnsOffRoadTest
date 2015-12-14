@@ -17,6 +17,7 @@ public class BorEmptyLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements empty")
     public void borEmptyLoginTest() throws InterruptedException {

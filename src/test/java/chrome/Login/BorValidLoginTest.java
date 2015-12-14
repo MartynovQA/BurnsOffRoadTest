@@ -17,6 +17,7 @@ public class BorValidLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements Valid")
     public void borValidLoginTest() throws InterruptedException {
@@ -25,10 +26,12 @@ public class BorValidLoginTest {
                 clearemail().
                 clearepass().
                 checkBorElements().
-                clickemailb("admin@a.com").
+                clickemailb("user@u.com").
                 clickpassb("123456").
                 clicklogbut().
-                checkBorAva();
+                checkBorAva().
+           //     logOutDash().
+                clickOut();
     }
 
 

@@ -17,6 +17,7 @@ public class BorSpaceEmailLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements space Email")
     public void borElementsTestEmpty() throws InterruptedException {

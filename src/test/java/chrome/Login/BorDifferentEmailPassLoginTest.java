@@ -17,6 +17,7 @@ public class BorDifferentEmailPassLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements valid email and valid password related with other email")
     public void borDifferentEmailPassLoginTest() throws InterruptedException {

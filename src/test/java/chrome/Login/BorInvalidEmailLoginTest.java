@@ -17,6 +17,7 @@ public class BorInvalidEmailLoginTest {
     WebDriver driver = null;
     CheckLogin steps = null;
 
+    @Test()
     @Severity(value = SeverityLevel.CRITICAL)
     @Features("BOR elements invalid email")
     public void borInvalidEmailLoginTest() throws InterruptedException {

@@ -40,6 +40,18 @@ public class CheckLogin extends BaseTest {
         return this;
     }
 
+    @Step("Go to LogOut")
+    public CheckLogin logOutDash() throws InterruptedException {
+        burnsOfRoadAva.logOutDash();
+        return this;
+    }
+
+    @Step("LogOut")
+    public CheckLogin clickOut(){
+        burnsOfRoadAva.clickOut();
+        return this;
+    }
+
     @Step("Fill email field")
     public CheckLogin clickemailb(String text){
         burnsOfRoadLogin.fillEmail(text);
