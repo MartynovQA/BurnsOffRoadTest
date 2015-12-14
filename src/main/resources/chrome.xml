@@ -4,6 +4,7 @@
     <test name="Start Page Test" verbose="1">
         <classes>
             <class name="chrome.Login.BorValidLoginTest"/>
+                   <class name="chrome.Login.BorEnterKeyLoginTest"/>
                    <class name="chrome.Login.BorEmptyLoginTest"/>
                    <class name="chrome.Login.BorSpaceALLLoginTest"/>
                    <class name="chrome.Login.BorSpaceEmailLoginTest"/>
@@ -12,7 +13,6 @@
                    <class name="chrome.Login.BorSpecSymbolLoginTest"/>
                    <class name="chrome.Login.BorInvalidPassLoginTest"/>
                    <class name="chrome.Login.BorDifferentEmailPassLoginTest"/>
-                   <class name="chrome.Login.BorEnterKeyLoginTest"/>
                </classes>
            </test>
 

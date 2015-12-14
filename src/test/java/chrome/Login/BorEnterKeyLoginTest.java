@@ -25,7 +25,7 @@ public class BorEnterKeyLoginTest {
                 isdisabled().
                 clearemail().
                 clearepass().
-                clickemailb("user@u.com").
+                clickemailb("Kes@mail.com").
                 clickpassb("123456").
                 clickenter().
                 checkBorAva().

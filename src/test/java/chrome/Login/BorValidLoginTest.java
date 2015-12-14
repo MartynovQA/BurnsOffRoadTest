@@ -26,7 +26,7 @@ public class BorValidLoginTest {
                 clearemail().
                 clearepass().
                 checkBorElements().
-                clickemailb("user@u.com").
+                clickemailb("Kes@mail.com").
                 clickpassb("123456").
                 clicklogbut().
                 checkBorAva().
