@@ -36,6 +36,10 @@ public class BurnsOfRoadLogin extends AbstractContainer {
         Assert.assertTrue(logButton.isDisplayed());
     }
 
+    public void checkLogButDis(){
+        logButton.isDisabled();
+    }
+
     public void fillEmail(String email){
         borEmail.clearAndType(email);
     }
@@ -54,15 +58,6 @@ public class BurnsOfRoadLogin extends AbstractContainer {
 
     public void logEnter() {
         logButton.clickEnter();
-    }
-
-    public boolean isDisabled() {
-        if(wrappedElement.getAttribute("disabled")=="disabled"){
-            return true;
-        }
-        else {
-            return false;
-        }
     }
 
     public void textFieldEmptyE() {

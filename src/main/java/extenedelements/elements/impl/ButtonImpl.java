@@ -23,6 +23,15 @@ class ButtonImpl extends AbstractElement implements Button {
 
     }
 
+    public boolean isDisabled() {
+        if(wrappedElement.getAttribute("disabled")=="disabled"){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public void clickEnter() {
         wrappedElement.sendKeys(Keys.ENTER);
     }

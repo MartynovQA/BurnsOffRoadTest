@@ -48,7 +48,7 @@ public class CheckLogin extends BaseTest {
 
     @Step("Check disabled button LogIn")
     public CheckLogin isdisabled(){
-        burnsOfRoadLogin.isDisabled();
+        burnsOfRoadLogin.checkLogButDis();
         return this;
     }
 
