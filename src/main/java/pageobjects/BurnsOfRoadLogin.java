@@ -56,6 +56,15 @@ public class BurnsOfRoadLogin extends AbstractContainer {
         logButton.clickEnter();
     }
 
+    public boolean isDisabled() {
+        if(wrappedElement.getAttribute("disabled")=="disabled"){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public void textFieldEmptyE() {
         if (borEmail.getText().length() == 0) {
         }
@@ -63,6 +72,7 @@ public class BurnsOfRoadLogin extends AbstractContainer {
             borEmail.clear();
         }
     }
+
     public void textFieldEmptyP(){
         if (borPass.getText().length() == 0){
         }

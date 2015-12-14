@@ -46,6 +46,12 @@ public class CheckLogin extends BaseTest {
         return this;
     }
 
+    @Step("Check disabled button LogIn")
+    public CheckLogin isdisabled(){
+        burnsOfRoadLogin.isDisabled();
+        return this;
+    }
+
     @Step("Fill pass field")
     public CheckLogin clickpassb(String text){
         burnsOfRoadLogin.fillPass(text);

@@ -21,6 +21,7 @@ public class BorInvalidEmailLoginTest {
     @Features("BOR elements invalid email")
     public void borInvalidEmailLoginTest() throws InterruptedException {
         steps.goToBor().
+                isdisabled().
                 clearemail().
                 clearepass().
                 clickemailb("ololo@mail.com").
@@ -34,7 +35,7 @@ public class BorInvalidEmailLoginTest {
 
     @BeforeTest
     public void setUp() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/selenium/chromedriver.exe");
-        steps = new CheckLogin(driver = WebDriverFactory.getDriver(DesiredCapabilities.chrome()));
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        steps = new CheckLogin(driver = WebDriverFactory.getDriver(capabilities));
     }
 }

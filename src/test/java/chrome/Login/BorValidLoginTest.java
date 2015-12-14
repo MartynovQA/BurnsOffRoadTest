@@ -21,6 +21,7 @@ public class BorValidLoginTest {
     @Features("BOR elements Valid")
     public void borValidLoginTest() throws InterruptedException {
         steps.goToBor().
+                isdisabled().
                 clearemail().
                 clearepass().
                 checkBorElements().
@@ -35,7 +36,7 @@ public class BorValidLoginTest {
 
     @BeforeTest
     public void setUp() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/selenium/chromedriver.exe");
-        steps = new CheckLogin(driver = WebDriverFactory.getDriver(DesiredCapabilities.chrome()));
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        steps = new CheckLogin(driver = WebDriverFactory.getDriver(capabilities));
     }
 }
